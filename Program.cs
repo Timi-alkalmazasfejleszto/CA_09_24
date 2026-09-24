@@ -4,8 +4,10 @@ Console.Write("Enter your name: ");
 string name = Console.ReadLine() ?? throw new Exception("cannot be null");
 
 
-string hw = "Hello, World!";
+string hw = $"Hello, {name}!";
 
+Console.Write("How many times?");
+int num=int.Parse(Console.ReadLine);
 foreach (var c in hw) 
 {
     Console.ForegroundColor = (ConsoleColor)Random.Shared.Next(1, 16);
